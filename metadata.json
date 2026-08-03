@@ -1,0 +1,6 @@
+{
+  "name": "Nirmal Shraddha Incense",
+  "description": "A showcase website for Nirmal Shraddha upcycled sacred temple flower incense sticks with traditional Indian aesthetics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
