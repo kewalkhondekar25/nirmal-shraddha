@@ -49,6 +49,8 @@ function MainApp() {
           onExploreCatalog={scrollToCatalog}
           onOpenQuiz={() => setIsQuizOpen(true)}
           onOpenFlagship={handleOpenFlagship}
+          onSelectVariant={(variant) => setSelectedVariant(variant)}
+          onOpenInquiry={() => setIsInquiryOpen(true)}
         />
 
         {/* Dynamic Packaging Box Carousel */}
