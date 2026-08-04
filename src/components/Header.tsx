@@ -98,10 +98,10 @@ export const Header: React.FC<HeaderProps> = ({ onOpenInquiry, onOpenQuiz }) => 
           {/* Contact Us Modal Trigger */}
           <button
             onClick={onOpenInquiry}
-            className="px-3 sm:px-3 py-2 rounded-full text-xs font-bold bg-amber-400/15 text-amber-300 border border-amber-400/40 hover:bg-amber-400/25 transition-all flex items-center gap-1.5"
+            className="hidden sm:flex px-3 py-2 rounded-full text-xs font-bold bg-amber-400/15 text-amber-300 border border-amber-400/40 hover:bg-amber-400/25 transition-all items-center gap-1.5"
           >
             <PhoneCall className="w-3.5 h-3.5 text-amber-400" />
-            <span className="hidden sm:inline">Contact Us</span>
+            <span>Contact Us</span>
           </button>
 
           {/* Scent Quiz CTA */}

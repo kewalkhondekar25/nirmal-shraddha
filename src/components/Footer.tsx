@@ -13,10 +13,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenInquiry, onOpenQuiz }) => 
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-[#1A0E08] text-white border-t border-amber-500/30 pt-16 pb-8 relative overflow-hidden">
+    <footer className="bg-[#1A0E08] text-white border-t border-amber-500/30 pt-16 pb-8 relative overflow-hidden w-full max-w-full">
       
       {/* Background Indian Motif Pattern */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10 w-full overflow-hidden">
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-amber-900/50">
           

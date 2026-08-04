@@ -67,10 +67,10 @@ export const UpcyclingStory: React.FC<UpcyclingStoryProps> = ({ onOpenInquiry, o
   ];
 
   return (
-    <section id="upcycling" className="py-20 bg-[#FAF7F2] text-slate-900 border-b border-amber-200 relative overflow-hidden">
+    <section id="upcycling" className="py-20 bg-[#FAF7F2] text-slate-900 border-b border-amber-200 relative overflow-hidden w-full max-w-full">
       
       {/* Background Decorative Grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-20">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10 space-y-20 w-full overflow-hidden">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3">

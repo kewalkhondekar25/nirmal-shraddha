@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Sparkles, Flower2, Clock, ShieldCheck, ArrowRight, Eye, ChevronLeft, ChevronRight, CheckCircle2, PhoneCall, MessageSquare } from 'lucide-react';
+import { Sparkles, Flower2, Clock, ShieldCheck, ArrowRight, ChevronLeft, ChevronRight, CheckCircle2, PhoneCall, MessageSquare } from 'lucide-react';
 import { FRAGRANCES } from '../data/fragrances';
 import { FragranceVariant } from '../types';
 import { useLanguage } from '../context/LanguageContext';
@@ -103,15 +103,15 @@ export const Hero: React.FC<HeroProps> = ({
   const theme = getBoxTheme(currentVariant.boxColorTheme || 'turmeric-gold');
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#22120B] via-[#2D1A10] to-[#180B06] text-white pt-8 pb-16 sm:pt-12 sm:pb-20 border-b border-amber-500/20">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#22120B] via-[#2D1A10] to-[#180B06] text-white pt-8 pb-16 sm:pt-12 sm:pb-20 border-b border-amber-500/20 w-full max-w-full">
       
       {/* Traditional Indian Mandala Background Pattern */}
       <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#EAB308_1px,transparent_1px)] [background-size:24px_24px]"></div>
 
       {/* Radiant Dynamic Glow Behind Hero Card */}
-      <div className={`absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-gradient-to-br ${theme.glow} rounded-full blur-3xl pointer-events-none transition-all duration-1000`}></div>
+      <div className={`absolute top-1/3 right-1/4 w-[280px] sm:w-[500px] h-[280px] sm:h-[500px] bg-gradient-to-br ${theme.glow} rounded-full blur-3xl pointer-events-none transition-all duration-1000`}></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-10">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10 space-y-10 w-full overflow-hidden">
         
         {/* Main Hero 2-Column Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
@@ -222,7 +222,11 @@ export const Hero: React.FC<HeroProps> = ({
             {/* Box Display Frame with Golden Border */}
             <div className={`relative rounded-3xl p-3 bg-gradient-to-br from-amber-400 via-amber-600 to-yellow-500 shadow-2xl shadow-amber-500/30 border-2 ${theme.border} transition-all duration-700`}>
               
-              <div className="rounded-2xl overflow-hidden bg-slate-950 relative aspect-[4/3] sm:aspect-[16/11] group">
+              <div 
+                onClick={handleInspectCurrent}
+                className="rounded-2xl overflow-hidden bg-slate-950 relative aspect-[4/3] sm:aspect-[16/11] group cursor-pointer"
+                title="Click to view packaging box details"
+              >
                 
                 {/* High-Resolution Actual Product Photo */}
                 <img
@@ -264,37 +268,7 @@ export const Hero: React.FC<HeroProps> = ({
                   <ChevronRight className="w-5 h-5" />
                 </button>
 
-                {/* Bottom Overlay Card with Product Details & Action Button */}
-                <div className="absolute bottom-3 left-3 right-3 p-3.5 rounded-xl bg-slate-950/90 backdrop-blur-md border border-amber-400/40 text-left flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xl">
-                  
-                  <div className="space-y-0.5 max-w-xs">
-                    <div className="flex items-center gap-2">
-                      <h3 className="font-serif font-bold text-white text-base sm:text-lg tracking-tight">
-                        {currentVariant.name}
-                      </h3>
-                      {currentVariant.isFlagship && (
-                        <span className="bg-amber-400 text-slate-950 px-2 py-0.5 rounded text-[9px] font-black uppercase">
-                          Flagship
-                        </span>
-                      )}
-                    </div>
-                    <p className="font-marathi text-amber-300 text-xs font-semibold">
-                      "{currentVariant.marathiSlogan || currentVariant.marathiTagline}"
-                    </p>
-                    <p className="text-[11px] text-slate-300 line-clamp-1">
-                      {currentVariant.tagline}
-                    </p>
-                  </div>
 
-                  <button
-                    onClick={handleInspectCurrent}
-                    className="px-4 py-2 rounded-xl bg-amber-400 text-slate-950 text-xs font-bold hover:bg-amber-300 transition-all shadow-lg flex items-center gap-1.5 shrink-0 self-end sm:self-center"
-                  >
-                    <Eye className="w-3.5 h-3.5" />
-                    <span>Inspect Box</span>
-                  </button>
-
-                </div>
 
               </div>
 

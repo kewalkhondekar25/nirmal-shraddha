@@ -93,12 +93,12 @@ export const FlavourCarousel: React.FC<FlavourCarouselProps> = ({ onSelectVarian
   const currentTheme = getThemeStyles(currentVariant);
 
   return (
-    <section id="carousel" className="py-16 bg-[#21140E] text-white border-b border-amber-500/30 relative overflow-hidden">
+    <section id="carousel" className="py-16 bg-[#21140E] text-white border-b border-amber-500/30 relative overflow-hidden w-full max-w-full">
       
       {/* Background Mandala Lighting */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] sm:w-[700px] h-[280px] sm:h-[700px] bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10 space-y-8 w-full overflow-hidden">
         
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-amber-500/20 pb-6">
@@ -236,7 +236,7 @@ export const FlavourCarousel: React.FC<FlavourCarouselProps> = ({ onSelectVarian
                   className="px-6 py-3 rounded-2xl bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm hover:bg-amber-300 transition-all shadow-xl shadow-amber-500/20 flex items-center gap-2"
                 >
                   <Info className="w-4 h-4" />
-                  <span>Inspect Box Details</span>
+                  <span>View Box Details</span>
                 </button>
 
                 <a

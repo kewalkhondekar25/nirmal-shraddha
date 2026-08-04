@@ -12,8 +12,8 @@ export const PackagingSpotlight: React.FC = () => {
   const selectedVariant = FRAGRANCES.find(f => f.id === selectedVariantId) || FRAGRANCES[0];
 
   return (
-    <section id="flagship" className="py-20 bg-[#FDFBF7] border-b border-amber-200 relative overflow-hidden text-slate-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12">
+    <section id="flagship" className="py-20 bg-[#FDFBF7] border-b border-amber-200 relative overflow-hidden text-slate-900 w-full max-w-full">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10 space-y-12 w-full overflow-hidden">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3">
@@ -31,14 +31,14 @@ export const PackagingSpotlight: React.FC = () => {
             "निर्माल्याचा सन्मान, सुगंधाचे वरदान"
           </p>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Inspect our premium packaged boxes. Each box is engineered with gold foil accents, traditional Marathi shlokas, certified DEP-free non-toxic ingredients, and a 1-hour burn guarantee per stick.
+            Explore our premium packaged boxes. Each box is engineered with gold foil accents, traditional Marathi shlokas, certified DEP-free non-toxic ingredients, and a 1-hour burn guarantee per stick.
           </p>
         </div>
 
         {/* Flavour Box Selector Bar */}
         <div className="space-y-3">
           <div className="text-center text-xs font-bold uppercase tracking-wider text-amber-900">
-            Select a Flavour Box to Inspect:
+            Select a Flavour Box to View Details:
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
             {FRAGRANCES.map((variant) => (

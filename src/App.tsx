@@ -34,7 +34,7 @@ function MainApp() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FDFBF7] font-sans text-slate-900 antialiased selection:bg-amber-400 selection:text-indigo-950">
+    <div className="min-h-screen bg-[#FDFBF7] font-sans text-slate-900 antialiased selection:bg-amber-400 selection:text-indigo-950 w-full max-w-full overflow-x-hidden">
       
       {/* Header Bar */}
       <Header

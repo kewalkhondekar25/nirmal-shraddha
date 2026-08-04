@@ -32,10 +32,10 @@ export const FragranceCatalog: React.FC<FragranceCatalogProps> = ({ onSelectVari
   });
 
   return (
-    <section id="collection" className="py-20 bg-[#FAF7F2] text-slate-900 border-b border-amber-200 relative overflow-hidden">
+    <section id="collection" className="py-20 bg-[#FAF7F2] text-slate-900 border-b border-amber-200 relative overflow-hidden w-full max-w-full">
       
       {/* Background Subtle Gradient */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10 w-full overflow-hidden">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3.5 mb-12">
