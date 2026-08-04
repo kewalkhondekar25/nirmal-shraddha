@@ -41,11 +41,29 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({ isOpen, onClose }) =
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md animate-fade-in overflow-y-auto">
-      <div className="relative w-full max-w-xl bg-white rounded-3xl overflow-hidden shadow-2xl border border-amber-300 my-8">
+    <div 
+      className="fixed inset-0 z-50 flex items-start justify-center p-2 sm:p-6 bg-slate-950/85 backdrop-blur-md animate-fade-in overflow-y-auto pt-12 sm:pt-10 pb-10"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onClose();
+      }}
+    >
+      {/* Floating Fixed Close Button Always Visible on Mobile Viewport */}
+      <button
+        onClick={onClose}
+        aria-label="Close modal"
+        title="Close"
+        className="fixed top-3 right-3 sm:top-6 sm:right-6 z-[60] w-11 h-11 rounded-full bg-amber-400 text-slate-950 hover:bg-amber-300 font-black shadow-2xl flex items-center justify-center transition-transform hover:scale-110 active:scale-95 border-2 border-slate-950 shrink-0"
+      >
+        <X className="w-6 h-6 stroke-[3]" />
+      </button>
+
+      <div 
+        className="relative w-full max-w-xl bg-white rounded-3xl overflow-hidden shadow-2xl border border-amber-300 my-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
         
         {/* Header */}
-        <div className="bg-gradient-to-r from-[#21140E] via-[#3B2215] to-[#21140E] text-white p-6 relative">
+        <div className="bg-gradient-to-r from-[#21140E] via-[#3B2215] to-[#21140E] text-white p-5 sm:p-6 relative pr-14">
           <button
             onClick={onClose}
             className="absolute top-4 right-4 p-2 rounded-full bg-slate-900/60 text-amber-300 hover:bg-amber-400 hover:text-slate-950 transition-colors"

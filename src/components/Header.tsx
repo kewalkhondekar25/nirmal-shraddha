@@ -14,29 +14,29 @@ export const Header: React.FC<HeaderProps> = ({ onOpenInquiry, onOpenQuiz }) => 
   const { t } = useLanguage();
 
   return (
-    <header className="sticky top-0 z-40 bg-[#1A0E08]/95 backdrop-blur-md border-b border-amber-500/30 text-white shadow-xl">
+    <header className="sticky top-0 z-40 bg-[#1A0E08]/95 backdrop-blur-md border-b border-amber-500/30 text-white shadow-xl w-full max-w-full overflow-hidden">
       {/* Top Banner with Localized Shloka / Motto and Language Selector */}
-      <div className="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-slate-950 px-4 py-1 text-xs sm:text-sm font-medium flex flex-wrap items-center justify-between gap-2">
-        <div className="flex items-center gap-2 mx-auto sm:mx-0">
+      <div className="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-slate-950 px-2 sm:px-4 py-1 text-xs sm:text-sm font-medium flex items-center justify-between gap-1 sm:gap-2 w-full max-w-full overflow-hidden">
+        <div className="flex items-center gap-1.5 min-w-0">
           <Sparkles className="w-3.5 h-3.5 animate-pulse text-amber-950 shrink-0" />
-          <span className="font-semibold tracking-wide text-center text-[11px] sm:text-xs">
+          <span className="font-semibold tracking-wide text-[10px] sm:text-xs truncate">
             {t.bannerShloka}
           </span>
-          <span className="hidden md:inline-block text-xs bg-[#1A0E08] text-amber-300 px-2 py-0.5 rounded-full font-bold ml-2 border border-amber-500/40">
+          <span className="hidden md:inline-block text-xs bg-[#1A0E08] text-amber-300 px-2 py-0.5 rounded-full font-bold ml-2 border border-amber-500/40 shrink-0">
             {t.charcoalFree}
           </span>
         </div>
 
         {/* Language Switcher in Top Bar */}
-        <div className="mx-auto sm:mx-0">
+        <div className="shrink-0">
           <LanguageSelector variant="header" />
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between w-full max-w-full overflow-hidden gap-2">
         {/* Logo Brand Crest */}
-        <a href="#" className="flex items-center gap-3 group shrink-0">
-          <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full border-2 border-amber-400 p-0.5 shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform duration-300 bg-amber-950/80 overflow-hidden shrink-0">
+        <a href="#" className="flex items-center gap-2 sm:gap-3 group shrink min-w-0">
+          <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-full border-2 border-amber-400 p-0.5 shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform duration-300 bg-amber-950/80 overflow-hidden shrink-0">
             <img
               src={brandLogoImg}
               alt="Nirmal Shraddha Brand Logo"
@@ -44,13 +44,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenInquiry, onOpenQuiz }) => 
               className="w-full h-full object-cover rounded-full group-hover:rotate-6 transition-transform duration-500"
             />
           </div>
-          <div>
+          <div className="min-w-0">
             <div className="flex items-center gap-1.5">
-              <span className="font-serif text-xl sm:text-2xl font-bold tracking-tight bg-gradient-to-r from-amber-200 via-amber-400 to-yellow-300 bg-clip-text text-transparent">
+              <span className="font-serif text-base sm:text-2xl font-bold tracking-tight bg-gradient-to-r from-amber-200 via-amber-400 to-yellow-300 bg-clip-text text-transparent truncate">
                 {t.brandName}
               </span>
             </div>
-            <p className="text-[10px] sm:text-[11px] text-amber-300/80 font-serif tracking-widest uppercase">
+            <p className="text-[9px] sm:text-[11px] text-amber-300/80 font-serif tracking-widest uppercase truncate hidden xs:block">
               {t.brandTagline}
             </p>
           </div>

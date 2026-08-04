@@ -44,14 +44,32 @@ export const ScentQuizModal: React.FC<ScentQuizModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md animate-fade-in">
-      <div className="relative w-full max-w-2xl bg-[#191638] text-white rounded-3xl overflow-hidden shadow-2xl border border-amber-400/40 my-8">
+    <div 
+      className="fixed inset-0 z-50 flex items-start justify-center p-2 sm:p-6 bg-slate-950/85 backdrop-blur-md animate-fade-in overflow-y-auto pt-12 sm:pt-10 pb-10"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onClose();
+      }}
+    >
+      {/* Floating Fixed Close Button Always Visible on Mobile Viewport */}
+      <button
+        onClick={onClose}
+        aria-label="Close modal"
+        title="Close"
+        className="fixed top-3 right-3 sm:top-6 sm:right-6 z-[60] w-11 h-11 rounded-full bg-amber-400 text-slate-950 hover:bg-amber-300 font-black shadow-2xl flex items-center justify-center transition-transform hover:scale-110 active:scale-95 border-2 border-slate-950 shrink-0"
+      >
+        <X className="w-6 h-6 stroke-[3]" />
+      </button>
+
+      <div 
+        className="relative w-full max-w-2xl bg-[#191638] text-white rounded-3xl overflow-hidden shadow-2xl border border-amber-400/40 my-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
         
         {/* Header */}
-        <div className="bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-500 text-slate-950 p-6 flex items-center justify-between">
+        <div className="bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-500 text-slate-950 p-5 sm:p-6 flex items-center justify-between pr-14">
           <div className="flex items-center gap-2">
             <Sparkles className="w-5 h-5 text-indigo-950" />
-            <h3 className="font-serif font-bold text-lg text-slate-950">
+            <h3 className="font-serif font-bold text-base sm:text-lg text-slate-950">
               Discover Your Sacred Scent • तुमची सुगंधी अगरबत्ती
             </h3>
           </div>
