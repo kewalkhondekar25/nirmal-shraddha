@@ -9,14 +9,14 @@ export const Testimonials: React.FC = () => {
     {
       name: 'Pandit Rameshwar Joshi',
       title: 'Head Priest, Pune Shrines',
-      quote: 'Nirmal Shraddha is a blessing for our temples. The idea of upcycling offered flowers into charcoal-free agarbatti preserves the holiness of Nirmalya while filling our sanctum with pure, soothing fragrance.',
+      quote: 'Nirmal Shraddha is a blessing for our temples. Upcycling offered flower garlands into pure, natural agarbatti prevents river pollution while filling our sanctum with soothing divine fragrance.',
       rating: 5,
       variant: 'Khandoba Malhar'
     },
     {
       name: 'Ananya Kulkarni',
       title: 'Yoga & Meditation Practitioner, Mumbai',
-      quote: 'I used to get headaches from regular charcoal incense. Chandan Royale by Nirmal Shraddha burns so cleanly for a full hour! My studio stays calm and aromatic without any soot.',
+      quote: 'Khandoba Malhar by Nirmal Shraddha is pure, fragrant, and burns so cleanly for a full hour! My meditation studio stays calm and beautifully aromatic.',
       rating: 5,
       variant: 'Chandan Royale'
     },

@@ -70,7 +70,7 @@ export const FragranceDetailModal: React.FC<FragranceDetailModalProps> = ({
               🌿 100% Upcycled Temple Flowers
             </span>
             <span className="bg-indigo-900 text-amber-300 px-3 py-1 rounded-full border border-amber-400/40">
-              ⚡ Charcoal-Free
+              ⚡ 100% Pure & Natural
             </span>
           </div>
         </div>

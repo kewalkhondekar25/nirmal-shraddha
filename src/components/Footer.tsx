@@ -42,7 +42,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenInquiry, onOpenQuiz }) => 
             </div>
 
             <p className="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-md">
-              Giving sacred floral offerings a fragrant new life. Upcycling 100% temple flowers into eco-friendly, charcoal-free, long-burning incense sticks. Made with devotion in India.
+              Giving sacred floral offerings a fragrant new life. Upcycling 100% temple flower garlands (Nirmalya) into 100% pure & chemical-free, long-burning incense sticks. Made with devotion in India.
             </p>
 
             <div className="p-3 rounded-xl bg-indigo-950/80 border border-amber-500/30 text-xs text-amber-300 font-marathi">
@@ -115,7 +115,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenInquiry, onOpenQuiz }) => 
 
             <div className="pt-2 flex flex-wrap items-center gap-3">
               <a
-                href="https://wa.me/917304071999?text=Hello%20Nirmal%20Shraddha%2C%20I%20want%20to%20know%20more%20about%20your%20charcoal-free%20incense%20boxes."
+                href="https://wa.me/917304071999?text=Hello%20Nirmal%20Shraddha%2C%20I%20want%20to%20know%20more%20about%20your%20chemical-free%20incense%20boxes."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-2 rounded-xl bg-emerald-600 text-white font-bold text-xs hover:bg-emerald-500 transition-colors shadow flex items-center gap-1.5"

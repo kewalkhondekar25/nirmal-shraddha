@@ -87,7 +87,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({ isOpen, onClose }) =
         {/* Quick Direct Action Bar */}
         <div className="bg-amber-50 p-4 border-b border-amber-200 flex flex-wrap items-center justify-around gap-3">
           <a
-            href="https://wa.me/917304071999?text=Hello%20Nirmal%20Shraddha%2C%20I%20want%20to%20know%20more%20about%20your%20charcoal-free%20incense%20boxes."
+            href="https://wa.me/917304071999?text=Hello%20Nirmal%20Shraddha%2C%20I%20want%20to%20know%20more%20about%20your%20natural%20incense%20boxes."
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 min-w-[180px] py-2.5 px-4 rounded-xl bg-emerald-600 text-white font-bold text-xs flex items-center justify-center gap-2 shadow hover:bg-emerald-500 transition-all"

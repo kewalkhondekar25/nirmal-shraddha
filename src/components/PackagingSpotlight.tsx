@@ -31,7 +31,7 @@ export const PackagingSpotlight: React.FC = () => {
             "निर्माल्याचा सन्मान, सुगंधाचे वरदान"
           </p>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Explore our premium packaged boxes. Each box is engineered with gold foil accents, traditional Marathi shlokas, certified DEP-free non-toxic ingredients, and a 1-hour burn guarantee per stick.
+            Explore our premium packaged boxes. Each box is engineered with gold foil accents, traditional Marathi shlokas, certified non-toxic ingredients, and a 1-hour burn guarantee per stick.
           </p>
         </div>
 
@@ -108,7 +108,7 @@ export const PackagingSpotlight: React.FC = () => {
             }`}
           >
             <ShieldCheck className="w-3.5 h-3.5" />
-            DEP-Free Ingredients
+            100% Pure Ingredients
           </button>
 
           <button
@@ -178,8 +178,8 @@ export const PackagingSpotlight: React.FC = () => {
                 <div className="text-[10px] text-slate-600">Temple Flowers</div>
               </div>
               <div className="p-2.5 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 space-y-0.5">
-                <div className="text-xs text-indigo-950 font-black">0% Charcoal</div>
-                <div className="text-[10px] text-slate-600">Pure Clean Air</div>
+                <div className="text-xs text-indigo-950 font-black">100% Pure</div>
+                <div className="text-[10px] text-slate-600">Natural Agarbatti</div>
               </div>
               <div className="p-2.5 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 space-y-0.5">
                 <div className="text-xs text-indigo-950 font-black">60 Mins</div>
@@ -305,7 +305,7 @@ export const PackagingSpotlight: React.FC = () => {
                     Formula & Ingredients List
                   </span>
                   <h3 className="font-serif text-xl font-bold text-white">
-                    100% Non-Toxic & DEP-Free Formula
+                    100% Pure & Natural Formula
                   </h3>
                 </div>
 
@@ -320,7 +320,7 @@ export const PackagingSpotlight: React.FC = () => {
 
                 <div className="p-3 rounded-xl bg-emerald-950/80 border border-emerald-400/40 text-emerald-200 text-xs flex items-center gap-2">
                   <ShieldCheck className="w-5 h-5 text-emerald-400 shrink-0" />
-                  <span><strong>DEP-Free Certified:</strong> Zero toxic chemical solvents or dark charcoal soot.</span>
+                  <span><strong>100% Pure & Natural Guarantee:</strong> Crafted with upcycled flower petals, natural woods, and organic binders.</span>
                 </div>
               </div>
             )}

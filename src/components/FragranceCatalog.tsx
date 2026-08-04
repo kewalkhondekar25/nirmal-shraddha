@@ -51,7 +51,7 @@ export const FragranceCatalog: React.FC<FragranceCatalogProps> = ({ onSelectVari
             निर्मल श्रद्धा सुगंधित अगरबत्ती — ६ दिव्य अनुभूती
           </p>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Discover our six signature incense variants. Each box features authentic temple motifs, traditional Marathi shlokas, and 100% charcoal-free sticks crafted with 1-hour clean burn guarantee.
+            Discover our six signature incense variants. Each box features authentic temple motifs, traditional Marathi shlokas, and 100% natural, fragrant sticks crafted with upcycled Nirmalya flower garlands.
           </p>
         </div>
 

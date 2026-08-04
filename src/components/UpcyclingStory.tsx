@@ -51,7 +51,7 @@ export const UpcyclingStory: React.FC<UpcyclingStoryProps> = ({ onOpenInquiry, o
 
   const whyChooseUs = [
     { emoji: '♻️', title: t.why1, desc: 'Collected from revered shrines & community poojas before becoming waste.' },
-    { emoji: '🌿', title: t.why2, desc: '100% Charcoal-free and DEP-free with zero toxic carbon monoxide.' },
+    { emoji: '🌿', title: t.why2, desc: '100% Pure & Natural formula with organic plant-based ingredients.' },
     { emoji: '🌸', title: t.why3, desc: 'Infused with natural flower petals, herbal resins & essential oils.' },
     { emoji: '🕉️', title: t.why4, desc: 'Rooted in ancient Vedic recipes & sacred Maharashtra traditions.' },
     { emoji: '🌎', title: t.why5, desc: 'Prevents thousands of kilograms of flowers from polluting rivers.' },
@@ -218,7 +218,7 @@ export const UpcyclingStory: React.FC<UpcyclingStoryProps> = ({ onOpenInquiry, o
               {t.whyChooseUsTitle}
             </h3>
             <p className="text-xs sm:text-sm text-slate-600">
-              Pure, charcoal-free, divine incense crafted with reverence for faith and nature.
+              Pure, 100% natural divine incense crafted with reverence for faith and nature.
             </p>
           </div>
 

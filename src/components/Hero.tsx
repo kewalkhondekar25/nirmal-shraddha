@@ -159,7 +159,7 @@ export const Hero: React.FC<HeroProps> = ({
                 <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" />
                 <div>
                   <div className="text-xs font-bold text-white">{t.charcoalFree}</div>
-                  <div className="text-[10px] text-amber-300/80">Zero Soot Smoke</div>
+                  <div className="text-[10px] text-amber-300/80">Sacred Garlands</div>
                 </div>
               </div>
 
@@ -174,8 +174,8 @@ export const Hero: React.FC<HeroProps> = ({
               <div className="flex items-center gap-2 p-2.5 rounded-xl bg-[#2A160C]/80 border border-amber-500/20 text-left">
                 <Sparkles className="w-4 h-4 text-amber-400 shrink-0" />
                 <div>
-                  <div className="text-xs font-bold text-white">{t.depFree}</div>
-                  <div className="text-[10px] text-amber-300/80">DEP Free Pure</div>
+                  <div className="text-xs font-bold text-white">{t.madeInIndia}</div>
+                  <div className="text-[10px] text-amber-300/80">Vedic Tradition</div>
                 </div>
               </div>
             </div>
@@ -199,7 +199,7 @@ export const Hero: React.FC<HeroProps> = ({
               </button>
 
               <a
-                href="https://wa.me/917304071999?text=Hello%20Nirmal%20Shraddha%2C%20I%20want%20to%20know%20more%20about%20your%20charcoal-free%20incense%20boxes."
+                href="https://wa.me/917304071999?text=Hello%20Nirmal%20Shraddha%2C%20I%20want%20to%20know%20more%20about%20your%20incense%20boxes."
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Chat on WhatsApp"

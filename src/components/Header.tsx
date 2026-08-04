@@ -83,7 +83,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenInquiry, onOpenQuiz }) => 
         <div className="flex items-center gap-2 sm:gap-2.5">
           {/* Direct WhatsApp Contact CTA */}
           <a
-            href="https://wa.me/917304071999?text=Hello%20Nirmal%20Shraddha%2C%20I%20would%20like%20to%20inquire%20about%20your%20charcoal-free%20incense%20boxes."
+            href="https://wa.me/917304071999?text=Hello%20Nirmal%20Shraddha%2C%20I%20would%20like%20to%20inquire%20about%20your%20natural%20incense%20boxes."
             target="_blank"
             rel="noopener noreferrer"
             title="Chat on WhatsApp"

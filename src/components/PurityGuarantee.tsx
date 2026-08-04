@@ -8,21 +8,15 @@ export const PurityGuarantee: React.FC = () => {
   const pillars = [
     {
       title: t.charcoalFree,
-      marathiTitle: 'कोळसामुक्त अगरबत्ती',
-      desc: 'Conventional charcoal incense burns hot, producing black soot and toxic carbon monoxide that irritates lungs. Nirmal Shraddha uses natural wood powder and flower petals for clean, smooth smoke.',
-      icon: ShieldCheck,
-    },
-    {
-      title: t.recycledFlowers,
-      marathiTitle: 'पवित्र निर्माल्याचा पुनर्चक्रण',
-      desc: 'We collect floral offerings from temples to prevent river pollution, transforming divine roses, marigolds, and lotus petals into aromatic sacred incense.',
+      marathiTitle: '१००% पवित्र मंदिर निर्माल्य',
+      desc: 'Instead of dumping sacred flower garlands into rivers causing water pollution, we upcycle blessed Nirmalya offerings into fragrant incense sticks for divine daily worship.',
       icon: Flower2,
     },
     {
       title: t.depFree,
-      marathiTitle: 'केमिकल व DEP मुक्त',
-      desc: 'Formulated strictly without Diethyl Phthalate (DEP) or artificial burning accelerators. Safe for daily morning pooja, children, and pets.',
-      icon: Sparkles,
+      marathiTitle: '१००% शुद्ध व नैसर्गिक',
+      desc: 'Crafted with natural herbs, essential oils, and organic plant-based binders for a pure, soothing fragrance. Safe for daily home poojas, children, and pets.',
+      icon: ShieldCheck,
     },
     {
       title: t.burnTimeGuarantee,

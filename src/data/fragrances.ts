@@ -50,7 +50,7 @@ export const FRAGRANCES: FragranceVariant[] = [
       'Natural Gum Resins',
       'Plant-Based Binders',
       'Bhandara & Sandalwood Fragrance Oils',
-      'Selected Aromatic Herbs (DEP Free)'
+      'Selected Aromatic Herbs'
     ],
     packagingHighlight: 'Gold foil accents with Lord Khandoba Jejuri Fort artwork & authentic Marathi shlokas.',
     isFlagship: true,
@@ -92,9 +92,9 @@ export const FRAGRANCES: FragranceVariant[] = [
     ingredients: [
       'Recycled Temple Rose & Lotus Powder',
       'Natural Essential Oils',
-      'Charcoal-Free Wood Powder',
+      'Pure Natural Wood Powder',
       'Plant-Based Binders',
-      'DEP-Free Perfumery'
+      '100% Pure Perfumery'
     ],
     packagingHighlight: 'Rose magenta box with brass kalash, temple diyas & 1-hour clean burn guarantee.',
     isFlagship: false,
@@ -179,7 +179,7 @@ export const FRAGRANCES: FragranceVariant[] = [
     ingredients: [
       'Recycled Shirdi Temple Offerings',
       'Pure Frankincense & Amber Gums',
-      'Charcoal-Free Wood Powder',
+      'Pure Natural Wood Powder',
       'Natural Essential Oils'
     ],
     packagingHighlight: 'Saffron-gold box decorated with Shirdi Sai Baba Samadhi Mandir & 3D Om Sai calligraphy.',
@@ -223,7 +223,7 @@ export const FRAGRANCES: FragranceVariant[] = [
       'Upcycled Sacred Bark & Dried Petal Dust',
       'Black Guggal & Loban Granules',
       'Pure Vetiver Oil',
-      'Bamboo Core (0% Charcoal)'
+      'Bamboo Core (100% Pure & Eco-Friendly)'
     ],
     packagingHighlight: 'Charcoal slate gray box with stone Kshetrapal temple artwork & fiery torch graphic.',
     isFlagship: false,
@@ -295,9 +295,9 @@ export const UPCYCLING_STEPS: UpcyclingStep[] = [
     step: 3,
     title: 'Infusion with Vedic Herbs & Resins',
     marathiTitle: 'वेदिक वनौषधी व डिंक मिश्रण',
-    description: 'Powdered petals are blended with natural Mysorean sandalwood, Guggul, Benzoin gum resins, and pure essential oils. Zero charcoal or synthetic toxic DEP is added.',
+    description: 'Powdered petals are blended with natural Mysorean sandalwood, Guggul, Benzoin gum resins, and pure essential oils.',
     icon: 'Sparkles',
-    metric: '0% Charcoal & DEP Free'
+    metric: '100% Pure Natural Formula'
   },
   {
     step: 4,
@@ -385,11 +385,11 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
 export const FAQS = [
   {
     q: 'What makes Nirmal Shraddha incense sticks unique?',
-    a: 'Unlike conventional incense made with toxic coal powder or synthetic chemicals, Nirmal Shraddha upcycles sacred temple flower offerings (Nirmalya) into 100% Charcoal-Free, DEP-free, non-toxic aromatic sticks. Each stick burns cleanly for 60 minutes while helping protect India’s rivers.'
+    a: 'Unlike conventional incense made with synthetic solvents, Nirmal Shraddha upcycles sacred temple flower garlands (Nirmalya) into 100% pure & natural aromatic sticks. Each stick burns cleanly for 60 minutes while preventing sacred flower waste from polluting India’s rivers.'
   },
   {
-    q: 'Why is Charcoal-Free agarbatti healthier for your home?',
-    a: 'Charcoal incense creates thick black carbon soot and CO emissions that irritate eyes and lungs. Our sticks use natural wood powder, flower petals, and plant binders, producing clean, smooth, therapeutic fragrance smoke.'
+    q: 'Why is upcycled Nirmalya agarbatti healthier for your home?',
+    a: 'Our sticks are crafted with upcycled flower petals, natural wood powder, and pure plant binders, producing clean, smooth, therapeutic fragrance smoke ideal for daily poojas and meditation.'
   },
   {
     q: 'What are the 6 authentic fragrance variants in the Nirmal Shraddha collection?',
