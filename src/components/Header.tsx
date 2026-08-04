@@ -20,15 +20,15 @@ export const Header: React.FC<HeaderProps> = ({ onOpenInquiry, onOpenQuiz }) => 
   };
 
   return (
-    <header className="sticky top-0 z-40 bg-[#191638]/95 backdrop-blur-md border-b border-amber-500/30 text-white shadow-xl">
+    <header className="sticky top-0 z-40 bg-[#1A0E08]/95 backdrop-blur-md border-b border-amber-500/30 text-white shadow-xl">
       {/* Top Banner with Localized Shloka / Motto and Language Selector */}
       <div className="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-slate-950 px-4 py-1 text-xs sm:text-sm font-medium flex flex-wrap items-center justify-between gap-2">
         <div className="flex items-center gap-2 mx-auto sm:mx-0">
-          <Sparkles className="w-3.5 h-3.5 animate-pulse text-indigo-950 shrink-0" />
+          <Sparkles className="w-3.5 h-3.5 animate-pulse text-amber-950 shrink-0" />
           <span className="font-semibold tracking-wide text-center">
             {t.bannerShloka}
           </span>
-          <span className="hidden md:inline-block text-xs bg-indigo-950 text-amber-300 px-2 py-0.5 rounded-full font-bold ml-2">
+          <span className="hidden md:inline-block text-xs bg-[#1A0E08] text-amber-300 px-2 py-0.5 rounded-full font-bold ml-2 border border-amber-500/40">
             {t.charcoalFree}
           </span>
         </div>
@@ -43,7 +43,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenInquiry, onOpenQuiz }) => 
         {/* Logo Brand Crest */}
         <a href="#" className="flex items-center gap-3 group">
           <div className="w-11 h-11 rounded-full bg-gradient-to-br from-amber-400 via-amber-500 to-amber-600 flex items-center justify-center p-0.5 shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform duration-300">
-            <div className="w-full h-full rounded-full bg-[#191638] flex items-center justify-center">
+            <div className="w-full h-full rounded-full bg-[#1A0E08] flex items-center justify-center">
               <Flame className="w-6 h-6 text-amber-400 group-hover:rotate-12 transition-transform duration-300" />
             </div>
           </div>
@@ -87,8 +87,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenInquiry, onOpenQuiz }) => 
             title={isAudioOn ? 'Mute Sacred Drone Sound' : 'Play Sacred Om Drone'}
             className={`p-2 rounded-full border text-xs transition-all flex items-center gap-1.5 ${
               isAudioOn
-                ? 'bg-amber-500 text-indigo-950 border-amber-300 font-bold shadow-md shadow-amber-500/20'
-                : 'bg-indigo-950/60 text-amber-300 border-amber-500/40 hover:bg-amber-500/20'
+                ? 'bg-amber-400 text-slate-950 border-amber-300 font-bold shadow-md shadow-amber-500/20'
+                : 'bg-[#2A180E]/80 text-amber-300 border-amber-500/40 hover:bg-amber-500/20'
             }`}
           >
             {isAudioOn ? <Volume2 className="w-4 h-4 animate-bounce" /> : <VolumeX className="w-4 h-4" />}

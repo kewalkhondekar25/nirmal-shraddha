@@ -18,7 +18,7 @@ export const FragranceDetailModal: React.FC<FragranceDetailModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-slate-950/80 backdrop-blur-md overflow-y-auto animate-fade-in">
-      <div className="relative w-full max-w-3xl bg-white rounded-3xl overflow-hidden shadow-2xl border border-amber-300 my-8">
+      <div className="relative w-full max-w-4xl bg-white rounded-3xl overflow-hidden shadow-2xl border border-amber-300 my-8">
         
         {/* Modal Header */}
         <div className="bg-gradient-to-r from-[#1E1B4E] via-[#2A2463] to-[#1E1B4E] text-white p-6 sm:p-8 relative">
@@ -26,13 +26,13 @@ export const FragranceDetailModal: React.FC<FragranceDetailModalProps> = ({
           {/* Close Button */}
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 p-2 rounded-full bg-indigo-950/60 text-amber-300 hover:bg-amber-400 hover:text-slate-950 transition-colors"
+            className="absolute top-4 right-4 p-2 rounded-full bg-indigo-950/60 text-amber-300 hover:bg-amber-400 hover:text-slate-950 transition-colors z-10"
           >
             <X className="w-5 h-5" />
           </button>
 
           <div className="space-y-1">
-            <span className="text-amber-400 font-marathi text-sm font-bold tracking-wider">
+            <span className="text-amber-400 font-marathi text-sm sm:text-base font-bold tracking-wider">
               {variant.marathiName} • {variant.marathiTagline}
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl font-extrabold text-white">
@@ -58,17 +58,41 @@ export const FragranceDetailModal: React.FC<FragranceDetailModalProps> = ({
         </div>
 
         {/* Modal Body */}
-        <div className="p-6 sm:p-8 space-y-8 max-h-[70vh] overflow-y-auto">
+        <div className="p-6 sm:p-8 space-y-8 max-h-[72vh] overflow-y-auto">
           
-          {/* Scent Story */}
-          <div className="space-y-2">
-            <h3 className="font-serif text-lg font-bold text-indigo-950 flex items-center gap-2">
-              <Sparkles className="w-5 h-5 text-amber-500" />
-              Sacred Heritage Story
-            </h3>
-            <p className="text-slate-700 text-sm leading-relaxed bg-amber-50/60 p-4 rounded-2xl border border-amber-200">
-              {variant.story}
-            </p>
+          {/* Box Image & Heritage Story Layout */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+            
+            {/* Left: Box Artwork */}
+            {variant.image && (
+              <div className="md:col-span-5 relative rounded-2xl overflow-hidden border-2 border-amber-300 shadow-xl bg-slate-900">
+                <img
+                  src={variant.image}
+                  alt={variant.name}
+                  referrerPolicy="no-referrer"
+                  className="w-full h-64 sm:h-72 object-cover object-center"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                <div className="absolute bottom-3 left-3 right-3 text-amber-300 text-xs font-marathi font-bold text-center">
+                  "{variant.marathiSlogan || 'निर्मल श्रद्धा'}"
+                </div>
+              </div>
+            )}
+
+            {/* Right: Scent Story */}
+            <div className={`${variant.image ? 'md:col-span-7' : 'md:col-span-12'} space-y-3`}>
+              <h3 className="font-serif text-lg font-bold text-indigo-950 flex items-center gap-2">
+                <Sparkles className="w-5 h-5 text-amber-500" />
+                Sacred Heritage Story
+              </h3>
+              <p className="text-slate-700 text-xs sm:text-sm leading-relaxed bg-amber-50/70 p-4 rounded-2xl border border-amber-200">
+                {variant.story}
+              </p>
+              <div className="p-3 rounded-xl bg-slate-100 text-xs text-slate-700 font-medium">
+                <strong>Packaging Feature:</strong> {variant.packagingHighlight}
+              </div>
+            </div>
+
           </div>
 
           {/* Scent Pyramid (Top, Heart, Base) */}

@@ -29,8 +29,10 @@ export interface FragranceVariant {
   bestTime: string; // e.g. "Early Morning Pooja"
   ingredients: string[];
   packagingHighlight?: string;
+  image?: string;
+  marathiSlogan?: string;
   isFlagship?: boolean;
-  boxColorTheme: 'turmeric-gold' | 'royal-indigo' | 'saffron-red' | 'emerald-green' | 'rose-pink';
+  boxColorTheme: 'turmeric-gold' | 'royal-indigo' | 'saffron-red' | 'emerald-green' | 'rose-pink' | 'slate-gray' | 'sky-blue';
 }
 
 export interface UpcyclingStep {

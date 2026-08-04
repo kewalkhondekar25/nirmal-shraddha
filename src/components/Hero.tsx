@@ -14,7 +14,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreCatalog, onOpenQuiz, onOpen
   const { t, language } = useLanguage();
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#191638] via-[#231F46] to-[#0F0C29] text-white pt-10 pb-20 border-b border-amber-500/20">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#22120B] via-[#2D1A10] to-[#180B06] text-white pt-10 pb-20 border-b border-amber-500/20">
       {/* Traditional Indian Mandala Background Pattern Accent */}
       <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#EAB308_1px,transparent_1px)] [background-size:24px_24px]"></div>
 
@@ -44,7 +44,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreCatalog, onOpenQuiz, onOpen
             </h1>
 
             {/* Subhead Quote from packaging */}
-            <div className="p-4 rounded-xl bg-indigo-950/60 border border-amber-500/30 font-marathi text-amber-200 text-base sm:text-lg leading-relaxed shadow-inner">
+            <div className="p-4 rounded-xl bg-[#2A160C]/80 border border-amber-500/30 font-marathi text-amber-200 text-base sm:text-lg leading-relaxed shadow-inner">
               {t.heroQuote}
             </div>
 
@@ -55,28 +55,28 @@ export const Hero: React.FC<HeroProps> = ({ onExploreCatalog, onOpenQuiz, onOpen
 
             {/* Key Feature Badges Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
-              <div className="flex items-center gap-2 p-2.5 rounded-lg bg-indigo-950/70 border border-amber-500/20 text-left">
+              <div className="flex items-center gap-2 p-2.5 rounded-lg bg-[#2A160C]/80 border border-amber-500/20 text-left">
                 <Flower2 className="w-5 h-5 text-amber-400 shrink-0" />
                 <div>
                   <div className="text-xs font-bold text-white">{t.recycledFlowers}</div>
                   <div className="text-[10px] text-amber-300/80">100% Sacred Flowers</div>
                 </div>
               </div>
-              <div className="flex items-center gap-2 p-2.5 rounded-lg bg-indigo-950/70 border border-amber-500/20 text-left">
+              <div className="flex items-center gap-2 p-2.5 rounded-lg bg-[#2A160C]/80 border border-amber-500/20 text-left">
                 <ShieldCheck className="w-5 h-5 text-amber-400 shrink-0" />
                 <div>
                   <div className="text-xs font-bold text-white">{t.charcoalFree}</div>
                   <div className="text-[10px] text-amber-300/80">Zero Soot Smoke</div>
                 </div>
               </div>
-              <div className="flex items-center gap-2 p-2.5 rounded-lg bg-indigo-950/70 border border-amber-500/20 text-left">
+              <div className="flex items-center gap-2 p-2.5 rounded-lg bg-[#2A160C]/80 border border-amber-500/20 text-left">
                 <Clock className="w-5 h-5 text-amber-400 shrink-0" />
                 <div>
                   <div className="text-xs font-bold text-white">{t.burnTimeGuarantee}</div>
                   <div className="text-[10px] text-amber-300/80">60 Mins per Stick</div>
                 </div>
               </div>
-              <div className="flex items-center gap-2 p-2.5 rounded-lg bg-indigo-950/70 border border-amber-500/20 text-left">
+              <div className="flex items-center gap-2 p-2.5 rounded-lg bg-[#2A160C]/80 border border-amber-500/20 text-left">
                 <Sparkles className="w-5 h-5 text-amber-400 shrink-0" />
                 <div>
                   <div className="text-xs font-bold text-white">{t.depFree}</div>
@@ -97,14 +97,15 @@ export const Hero: React.FC<HeroProps> = ({ onExploreCatalog, onOpenQuiz, onOpen
 
               <button
                 onClick={() => {
-                  const storyElem = document.getElementById('upcycling');
-                  if (storyElem) {
-                    storyElem.scrollIntoView({ behavior: 'smooth' });
+                  const carouselElem = document.getElementById('carousel');
+                  if (carouselElem) {
+                    carouselElem.scrollIntoView({ behavior: 'smooth' });
                   }
                 }}
-                className="px-6 py-3.5 rounded-full bg-indigo-900/60 border border-amber-400/50 text-amber-200 font-semibold text-sm hover:bg-amber-400/20 hover:text-white transition-all flex items-center gap-2"
+                className="px-6 py-3.5 rounded-full bg-[#2A160C]/90 border border-amber-400/50 text-amber-200 font-semibold text-sm hover:bg-amber-400/20 hover:text-white transition-all flex items-center gap-2"
               >
-                <span>{t.heroLearnStory}</span>
+                <Sparkles className="w-4 h-4 text-amber-400" />
+                <span>Carousel Showcase</span>
               </button>
 
               <button
@@ -134,7 +135,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreCatalog, onOpenQuiz, onOpen
               
               {/* Outer Golden Indian Traditional Arch Frame */}
               <div className="relative rounded-3xl p-3 bg-gradient-to-b from-amber-400 via-amber-600 to-yellow-500 shadow-2xl shadow-amber-500/30">
-                <div className="rounded-2xl overflow-hidden bg-indigo-950 relative aspect-[4/3] sm:aspect-[16/11]">
+                <div className="rounded-2xl overflow-hidden bg-slate-950 relative aspect-[4/3] sm:aspect-[16/11]">
                   <img
                     src={heroRitualImg}
                     alt="Nirmal Shraddha Incense Ritual"
@@ -142,10 +143,10 @@ export const Hero: React.FC<HeroProps> = ({ onExploreCatalog, onOpenQuiz, onOpen
                     className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
                   />
                   {/* Subtle Floating Smoke Overlay Effect */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#191638] via-transparent to-transparent opacity-80"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#22120B] via-transparent to-transparent opacity-80"></div>
 
                   {/* Flagship Product Floating Card */}
-                  <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-[#191638]/90 backdrop-blur-md border border-amber-400/40 text-left flex items-center justify-between shadow-xl">
+                  <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-[#22120B]/90 backdrop-blur-md border border-amber-400/40 text-left flex items-center justify-between shadow-xl">
                     <div className="space-y-0.5">
                       <div className="flex items-center gap-2">
                         <span className="text-xs font-bold text-amber-400 tracking-wider uppercase font-marathi">

@@ -12,18 +12,18 @@ export const Footer: React.FC<FooterProps> = ({ onOpenInquiry, onOpenQuiz }) => 
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-[#191638] text-white border-t border-amber-500/30 pt-16 pb-8 relative overflow-hidden">
+    <footer className="bg-[#1A0E08] text-white border-t border-amber-500/30 pt-16 pb-8 relative overflow-hidden">
       
       {/* Background Indian Motif Pattern */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-indigo-900">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-amber-900/50">
           
           {/* Brand Column */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center p-0.5 shadow-lg">
-                <div className="w-full h-full rounded-full bg-[#191638] flex items-center justify-center">
+                <div className="w-full h-full rounded-full bg-[#1A0E08] flex items-center justify-center">
                   <Flame className="w-5 h-5 text-amber-400" />
                 </div>
               </div>

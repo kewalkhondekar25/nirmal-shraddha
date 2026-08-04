@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { LanguageProvider } from './context/LanguageContext';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
+import { FlavourCarousel } from './components/FlavourCarousel';
 import { PackagingSpotlight } from './components/PackagingSpotlight';
 import { UpcyclingStory } from './components/UpcyclingStory';
 import { FragranceCatalog } from './components/FragranceCatalog';
@@ -48,6 +49,12 @@ function MainApp() {
           onExploreCatalog={scrollToCatalog}
           onOpenQuiz={() => setIsQuizOpen(true)}
           onOpenFlagship={handleOpenFlagship}
+        />
+
+        {/* Dynamic Packaging Box Carousel */}
+        <FlavourCarousel
+          onSelectVariant={(variant) => setSelectedVariant(variant)}
+          onOpenInquiry={() => setIsInquiryOpen(true)}
         />
 
         {/* Flagship Khandoba Malhar Box Showcase (Focus on attached user packaging image) */}
