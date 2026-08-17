@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { fontVariables } from './fonts'
 import './globals.css'
 import './updates.css'
 import './bento.css'
@@ -104,7 +103,7 @@ const websiteLd = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="mr" className={fontVariables}>
+    <html lang="mr">
       <body>
         <JsonLd data={[organizationLd, websiteLd]} />
         <LanguageProvider>
