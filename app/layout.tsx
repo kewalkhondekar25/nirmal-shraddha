@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { DM_Mono, DM_Sans, Noto_Sans_Devanagari, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import './updates.css'
 import './bento.css'
@@ -10,35 +9,6 @@ import { Footer } from './ui/footer'
 import { LanguageProvider } from './ui/language'
 import { JsonLd } from './ui/json-ld'
 import { absoluteUrl, siteConfig } from './site'
-
-const dmSans = DM_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '600'],
-  variable: '--font-dm-sans',
-  display: 'swap',
-})
-
-const dmMono = DM_Mono({
-  subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-dm-mono',
-  display: 'swap',
-})
-
-const playfair = Playfair_Display({
-  subsets: ['latin'],
-  weight: ['500', '600'],
-  style: ['normal', 'italic'],
-  variable: '--font-playfair',
-  display: 'swap',
-})
-
-const notoDevanagari = Noto_Sans_Devanagari({
-  subsets: ['devanagari'],
-  weight: ['400', '500', '600'],
-  variable: '--font-noto-devanagari',
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -133,10 +103,11 @@ const websiteLd = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="mr"
-      className={`${dmSans.variable} ${dmMono.variable} ${playfair.variable} ${notoDevanagari.variable}`}
-    >
+    <html lang="mr">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
       <body>
         <JsonLd data={[organizationLd, websiteLd]} />
         <LanguageProvider>
