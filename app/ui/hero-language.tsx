@@ -1,3 +1,37 @@
 'use client'
-import Link from'next/link';import{useLanguage}from'./language'
-export function HeroLanguage(){const{lang,setLang,t}=useLanguage();return <section className="home-hero"><div className="hero-orbit one"></div><div className="hero-orbit two"></div><div className="shell hero-inner"><p className="section-kicker">{t.tag}</p><div className="language-picker">{(['Marathi','Hindi','English']as const).map(item=><button key={item} className={lang===item?'selected':''} onClick={()=>setLang(item)}>{item}</button>)}</div><h1>{t.hero}</h1><p className="hero-detail">{t.detail}</p><Link href="/shop" className="button dark-button">{t.explore}<span>↗</span></Link></div></section>}
+import Link from 'next/link'
+import { useLanguage } from './language'
+
+export function HeroLanguage() {
+  const { lang, setLang, t } = useLanguage()
+  const heroLang = lang.toLowerCase()
+
+  return (
+    <section className={`home-hero home-hero--${heroLang}`}>
+      <div className="hero-orbit one"></div>
+      <div className="hero-orbit two"></div>
+      <div className="shell hero-inner">
+        <p className="section-kicker">{t.tag}</p>
+        <div className="language-picker">
+          {(['Marathi', 'Hindi', 'English'] as const).map((item) => (
+            <button
+              key={item}
+              className={lang === item ? 'selected' : ''}
+              onClick={() => setLang(item)}
+            >
+              {item}
+            </button>
+          ))}
+        </div>
+        <h1>
+          <span className="hero-title-text">{t.hero}</span>
+        </h1>
+        <p className="hero-detail">{t.detail}</p>
+        <Link href="/shop" className="button dark-button">
+          {t.explore}
+          <span>↗</span>
+        </Link>
+      </div>
+    </section>
+  )
+}
