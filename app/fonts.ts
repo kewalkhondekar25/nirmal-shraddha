@@ -1,4 +1,9 @@
-import { DM_Mono, DM_Sans, Noto_Sans_Devanagari, Playfair_Display } from 'next/font/google'
+import {
+  DM_Mono,
+  DM_Sans,
+  Noto_Serif_Devanagari,
+  Playfair_Display,
+} from 'next/font/google'
 
 export const dmSans = DM_Sans({
   subsets: ['latin'],
@@ -22,10 +27,10 @@ export const playfair = Playfair_Display({
   display: 'swap',
 })
 
-export const notoDevanagari = Noto_Sans_Devanagari({
+export const notoSerifDevanagari = Noto_Serif_Devanagari({
   subsets: ['devanagari'],
   weight: ['400', '500', '600'],
-  variable: '--font-noto-devanagari',
+  variable: '--font-noto-serif',
   display: 'swap',
 })
 
@@ -33,5 +38,5 @@ export const fontVariables = [
   dmSans.variable,
   dmMono.variable,
   playfair.variable,
-  notoDevanagari.variable,
+  notoSerifDevanagari.variable,
 ].join(' ')
