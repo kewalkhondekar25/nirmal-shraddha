@@ -11,7 +11,7 @@ export function ShopPage() {
     lang === 'Marathi'
       ? 'प्रत्येक भक्तीसाठी सुगंध.'
       : lang === 'Hindi'
-        ? 'हर भक्ति के लिए सुगंध।'
+        ? 'प्रत्येक भक्ति के लिए सुगंध।'
         : 'Fragrance for every devotion.'
   const view =
     lang === 'Marathi'

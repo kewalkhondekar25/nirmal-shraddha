@@ -4,7 +4,7 @@ import { discountPercent, productPricing } from './products'
 
 export function ProductPrice({ size = 'card' }: { size?: 'card' | 'detail' }) {
   const { lang } = useLanguage()
-  const mrpLabel = lang === 'Marathi' ? 'मूळ किंमत' : lang === 'Hindi' ? 'मूल्य' : 'MRP'
+  const mrpLabel = lang === 'Marathi' ? 'मूळ किंमत' : lang === 'Hindi' ? 'अधिकतम मूल्य' : 'MRP'
   const offLabel = lang === 'Marathi' ? 'सूट' : lang === 'Hindi' ? 'छूट' : 'OFF'
 
   return (
