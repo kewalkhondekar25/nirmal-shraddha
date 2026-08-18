@@ -16,7 +16,7 @@ export function ProductCarousel() {
   const title = products[active].names[lang]
 
   return (
-    <section className="carousel-section">
+    <section className={`carousel-section carousel-section--${lang.toLowerCase()}`}>
       <div className="shell carousel-heading">
         <div>
           <p className="section-kicker">{t.collection}</p>
