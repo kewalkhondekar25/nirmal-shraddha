@@ -7,8 +7,10 @@ export function HeroLanguage() {
 
   return (
     <section className={`home-hero home-hero--${lang.toLowerCase()}`}>
-      <div className="hero-orbit one"></div>
-      <div className="hero-orbit two"></div>
+      <div className="hero-orbits" aria-hidden="true">
+        <div className="hero-orbit one"></div>
+        <div className="hero-orbit two"></div>
+      </div>
       <div className="shell hero-inner">
         <p className="section-kicker">{t.tag}</p>
         <div className="language-picker">
