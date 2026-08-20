@@ -4,7 +4,7 @@ export type LocalizedText = Record<Lang, string>
 
 export const productPricing = {
   mrp: 130,
-  price: 90,
+  price: 95,
 } as const
 
 export const discountPercent = Math.round(
